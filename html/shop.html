@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/shop.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <!-- start banner-container -->
+      <div class="banner">
+        <div class="banner__opacity">
+          <!-- start container-header -->
+          <div class="container container-header">
+            <div class="tablet-header">
+              <div class="ham-logo">
+                <div class="tablet-logo">
+                  <img src="../img/img-logo.png" alt="" />
+                </div>
+                <div class="ham-icon">
+                  <label for="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                  </label>
+                  <input id="menu-icon" type="checkbox" hidden />
+                  <label for="menu-icon" class="overlay"></label>
+                  <ul class="navbar-content">
+                    <li class="navbar-content__child">
+                      <a href="" class="navbar-child__item">HOME</a>
+                    </li>
+                    <li class="navbar-content__child">
+                      <a href="" class="navbar-child__item">COURSES</a>
+                    </li>
+                    <li class="navbar-content__child">
+                      <a href="" class="navbar-child__item">EVENTS</a>
+                    </li>
+                    <li class="navbar-content__child">
+                      <a href="" class="navbar-child__item">PAGES</a>
+                    </li>
+                    <li class="navbar-content__child">
+                      <a href="" class="navbar-child__item">PORTFOLIO</a>
+                    </li>
+                    <li class="navbar-content__child">
+                      <a href="" class="navbar-child__item">BLOG</a>
+                    </li>
+                    <li class="navbar-content__child">
+                      <a href="" class="navbar-child__item">SHOP</a>
+                    </li>
+                    <li class="navbar-content__child">
+                      <a href="" class="navbar-child__item">CONTACT</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="search-shop">
+                <!-- <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i> -->
+                <div class="magnifying-wrapper">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="magnifying-glass"
+                    class="magnifying-input"
+                    hidden
+                  />
+                  <label for="magnifying-glass" class="overlay"></label>
+                  <label class="magnifying-glass" for="magnifying-glass">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="magnifying-search">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Search..."
+                      />
+
+                      <button type="button">
+                        <i
+                          style="pointer-events: all"
+                          class="fa-solid fa-magnifying-glass"
+                        ></i>
+                      </button>
+                    </div>
+                  </label>
+                </div>
+                <i class="shopping-icon fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            <!-- start navbar -->
+            <div class="navbar">
+              <!--start navbar logo -->
+              <a class="navbar-logo" href="../html/shop.html">
+                <img class="logo" src="../img/img-logo.png" alt="logo banner" />
+              </a>
+              <!-- end navbar logo -->
+
+              <!-- start navbar content -->
+              <ul class="navbar-content">
+                <li class="navbar-content__child">
+                  <a href="" class="navbar-child__item">HOME</a>
+                </li>
+                <li class="navbar-content__child">
+                  <a href="" class="navbar-child__item">COURSES</a>
+                </li>
+                <li class="navbar-content__child">
+                  <a href="" class="navbar-child__item">EVENTS</a>
+                </li>
+                <li class="navbar-content__child">
+                  <a href="" class="navbar-child__item">PAGES</a>
+                </li>
+                <li class="navbar-content__child">
+                  <a href="" class="navbar-child__item">PORTFOLIO</a>
+                </li>
+                <li class="navbar-content__child">
+                  <a href="" class="navbar-child__item">BLOG</a>
+                </li>
+                <li class="navbar-content__child">
+                  <a href="" class="navbar-child__item">SHOP</a>
+                </li>
+                <li class="navbar-content__child">
+                  <a href="" class="navbar-child__item">CONTACT</a>
+                </li>
+              </ul>
+              <!-- end navbar content -->
+
+              <!-- start nav button -->
+              <div class="nav-btn">
+                <div class="magnifying-wrapper">
+                  <input
+                    class="magnifying-input"
+                    type="checkbox"
+                    name=""
+                    id="magnifying-glass2"
+                    hidden
+                  />
+                  <label for="magnifying-glass2" class="overlay"></label>
+                  <label class="magnifying-glass2" for="magnifying-glass2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="magnifying-search">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Search..."
+                      />
+
+                      <button type="button">
+                        <i
+                          style="pointer-events: all"
+                          class="fa-solid fa-magnifying-glass"
+                        ></i>
+                      </button>
+                    </div>
+                  </label>
+                </div>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <!-- end nav button -->
+            </div>
+            <!-- end navbar -->
+            <!-- start breadcrumb -->
+            <div class="container container-breadcrumb">
+              <div class="breadcrumb">
+                <div class="breadcrumb-child">
+                  <h1 class="breadcrumb-child__heading">SHOP</h1>
+                </div>
+                <div class="breadcrumb-child">
+                  <div class="breadcrumb-child__item">
+                    <a class="breadcrumb-item" href="">HOME</a>
+                  </div>
+                  <div class="breadcrumb-child__item">
+                    <a class="breadcrumb-item" href="">PAGES</a>
+                  </div>
+                  <div class="breadcrumb-child__item">
+                    <a class="breadcrumb-item" href="">SHOP</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end breadcrumb -->
+          </div>
+          <!-- end container-header -->
+        </div>
+      </div>
+    </div>
+    <!-- end banner-container -->
+
+    <!-- start main container -->
+    <div class="main-content">
+      <div class="container main-container">
+        <!-- start sidebar -->
+        <div class="sidebar">
+          <!-- start form search -->
+          <form action="" class="search-product" autocomplete="off">
+            <input
+              class="input-search"
+              type="text"
+              name=""
+              id=""
+              spellcheck="false"
+              placeholder="search Product"
+            />
+            <button type="submit" class="search-btn">Search</button>
+          </form>
+          <!-- end form search -->
+
+          <!-- start product category -->
+          <div class="product-category">
+            <h3 class="product-title">Shop Categories :</h3>
+            <ul class="product-type">
+              <li class="child-type">
+                <a href="" class="child-type__item">SMM Shop</a>
+              </li>
+              <li class="child-type">
+                <a href="" class="child-type__item">Network Security </a>
+              </li>
+              <li class="child-type">
+                <a href="" class="child-type__item">Programming </a>
+              </li>
+              <li class="child-type">
+                <a href="" class="child-type__item">Search Engine Opt</a>
+              </li>
+              <li class="child-type">
+                <a href="" class="child-type__item">Social Media</a>
+              </li>
+              <li class="child-type">
+                <a href="" class="child-type__item">Technology</a>
+              </li>
+              <li class="child-type">
+                <a href="" class="child-type__item">User Experience </a>
+              </li>
+              <li class="child-type">
+                <a href="" class="child-type__item">Website Analytics </a>
+              </li>
+            </ul>
+          </div>
+          <!-- end product category -->
+
+          <!-- start popular product -->
+          <div class="popular-products">
+            <h3 class="product-title">Popular Product</h3>
+            <ul class="popular-products__list">
+              <li class="list-item">
+                <div class="img-wrapper">
+                  <img
+                    src="../img/popular-product1.jpg"
+                    alt=""
+                    class="img-product"
+                  />
+                </div>
+                <div class="product-details">
+                  <a href="" class="product-name">Analysis & data</a>
+                  <strong class="product-fee">$ 235</strong>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="img-wrapper">
+                  <img
+                    src="../img/popular-product2.jpg"
+                    alt=""
+                    class="img-product"
+                  />
+                </div>
+                <div class="product-details">
+                  <a href="" class="product-name">Software Dev...</a>
+                  <strong class="product-fee">$ 35</strong>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="img-wrapper">
+                  <img
+                    src="../img/popular-product3.jpg"
+                    alt=""
+                    class="img-product"
+                  />
+                </div>
+                <div class="product-details">
+                  <a href="" class="product-name">Marketing Plan</a>
+                  <strong class="product-fee">$ 75</strong>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="img-wrapper">
+                  <img
+                    src="../img/popular-product4.jpg"
+                    alt=""
+                    class="img-product"
+                  />
+                </div>
+                <div class="product-details">
+                  <a href="" class="product-name">Google Expands </a>
+                  <strong class="product-fee">$ 234</strong>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- end popular product -->
+        </div>
+        <!-- end side bar -->
+
+        <!-- start shop products  -->
+        <div class="shop-products">
+          <input
+            class="mobile-checked__sidebar"
+            id="mobile-sidebar"
+            type="checkbox"
+            name=""
+            id=""
+            hidden
+          />
+          <label data-aos="fade-up" class="light-bulb" for="mobile-sidebar">
+            <i class="fa-regular fa-lightbulb"></i>
+          </label>
+
+          <label for="mobile-sidebar" class="overlay"></label>
+
+          <div class="mobile-sidebar">
+            <label for="mobile-sidebar" class="icon-xmark">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </label>
+            <!-- start sidebar -->
+            <div class="sidebar">
+              <!-- start form search -->
+              <form action="" class="search-product" autocomplete="off">
+                <input
+                  class="input-search"
+                  type="text"
+                  name=""
+                  id=""
+                  spellcheck="false"
+                  placeholder="search Product"
+                />
+                <button type="submit" class="search-btn">Search</button>
+              </form>
+              <!-- end form search -->
+
+              <!-- start product category -->
+              <div class="product-category">
+                <h3 class="product-title">Shop Categories :</h3>
+                <ul class="product-type">
+                  <li class="child-type">
+                    <a href="" class="child-type__item">SMM Shop</a>
+                  </li>
+                  <li class="child-type">
+                    <a href="" class="child-type__item">Network Security </a>
+                  </li>
+                  <li class="child-type">
+                    <a href="" class="child-type__item">Programming </a>
+                  </li>
+                  <li class="child-type">
+                    <a href="" class="child-type__item">Search Engine Opt</a>
+                  </li>
+                  <li class="child-type">
+                    <a href="" class="child-type__item">Social Media</a>
+                  </li>
+                  <li class="child-type">
+                    <a href="" class="child-type__item">Technology</a>
+                  </li>
+                  <li class="child-type">
+                    <a href="" class="child-type__item">User Experience </a>
+                  </li>
+                  <li class="child-type">
+                    <a href="" class="child-type__item">Website Analytics </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end product category -->
+
+              <!-- start popular product -->
+              <div class="popular-products">
+                <h3 class="product-title">Popular Product</h3>
+                <ul class="popular-products__list">
+                  <li class="list-item">
+                    <div class="img-wrapper">
+                      <img
+                        src="../img/popular-product1.jpg"
+                        alt=""
+                        class="img-product"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <a href="" class="product-name">Analysis & data</a>
+                      <strong class="product-fee">$ 235</strong>
+                    </div>
+                  </li>
+                  <li class="list-item">
+                    <div class="img-wrapper">
+                      <img
+                        src="../img/popular-product2.jpg"
+                        alt=""
+                        class="img-product"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <a href="" class="product-name">Software Dev...</a>
+                      <strong class="product-fee">$ 35</strong>
+                    </div>
+                  </li>
+                  <li class="list-item">
+                    <div class="img-wrapper">
+                      <img
+                        src="../img/popular-product3.jpg"
+                        alt=""
+                        class="img-product"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <a href="" class="product-name">Marketing Plan</a>
+                      <strong class="product-fee">$ 75</strong>
+                    </div>
+                  </li>
+                  <li class="list-item">
+                    <div class="img-wrapper">
+                      <img
+                        src="../img/popular-product4.jpg"
+                        alt=""
+                        class="img-product"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <a href="" class="product-name">Google Expands </a>
+                      <strong class="product-fee">$ 234</strong>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end popular product -->
+            </div>
+            <!-- end side bar -->
+          </div>
+          <div class="selection">
+            <div class="filter">
+              <select
+                class="form-select form-select-lg mb-3"
+                aria-label="Large select example"
+              >
+                <option selected>Select Filter</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="pagination-slots">
+              <p>Showing 1-9 of 25 Result</p>
+            </div>
+          </div>
+
+          <!-- start product list -->
+          <ul class="product-list">
+            <!-- item child -->
+            <li class="product-list__child">
+              <div class="product-list__img">
+                <img src="../img/product-1.jpg" alt="" />
+              </div>
+              <div class="product-list__info">
+                <div class="info">
+                  <a href="" class="info__name">Ten steps to making </a>
+                  <strong class="info__fee">$ 89</strong>
+                  <button class="info__btn">Add To Cart</button>
+                </div>
+              </div>
+            </li>
+            <!-- item child -->
+            <li class="product-list__child">
+              <div class="product-list__img">
+                <img src="../img/product-2.jpg" alt="" />
+              </div>
+              <div class="product-list__info">
+                <div class="info">
+                  <a href="" class="info__name">Long-Tail SEO Strategy </a>
+                  <strong class="info__fee">$ 19</strong>
+                  <button class="info__btn">Add To Cart</button>
+                </div>
+              </div>
+            </li>
+            <!-- item child -->
+            <li class="product-list__child">
+              <div class="product-list__img">
+                <img src="../img/product-3.jpg" alt="" />
+              </div>
+
+              <div class="product-list__info">
+                <div class="info">
+                  <a href="" class="info__name">Create optimized content </a>
+                  <strong class="info__fee">$79</strong>
+                  <button class="info__btn">Add To Cart</button>
+                </div>
+              </div>
+            </li>
+            <!-- item child -->
+            <li class="product-list__child">
+              <div class="product-list__img">
+                <img src="../img/product-4.jpg" alt="" />
+              </div>
+
+              <div class="product-list__info">
+                <div class="info">
+                  <a href="" class="info__name">Boost Your Organic</a>
+                  <strong class="info__fee">$ 9</strong>
+                  <button class="info__btn">Add To Cart</button>
+                </div>
+              </div>
+            </li>
+            <!-- item child -->
+            <li class="product-list__child">
+              <div class="product-list__img">
+                <img src="../img/product-5.jpg" alt="" />
+              </div>
+
+              <div class="product-list__info">
+                <div class="info">
+                  <a href="" class="info__name">Search Rankings</a>
+                  <strong class="info__fee">$ 47</strong>
+                  <button class="info__btn">Add To Cart</button>
+                </div>
+              </div>
+            </li>
+            <!-- item child -->
+            <li class="product-list__child">
+              <div class="product-list__img">
+                <img src="../img/product-6.jpg" alt="" />
+              </div>
+
+              <div class="product-list__info">
+                <div class="info">
+                  <a href="" class="info__name"> School PPC</a>
+                  <strong class="info__fee">$ 36</strong>
+                  <button class="info__btn">Add To Cart</button>
+                </div>
+              </div>
+            </li>
+            <!-- item child -->
+            <li class="product-list__child">
+              <div class="product-list__img">
+                <img src="../img/product-7.jpg" alt="" />
+              </div>
+
+              <div class="product-list__info">
+                <div class="info">
+                  <a href="" class="info__name">Guide to SEO</a>
+                  <strong class="info__fee">$ 19</strong>
+                  <button class="info__btn">Add To Cart</button>
+                </div>
+              </div>
+            </li>
+            <!-- item child -->
+            <li class="product-list__child">
+              <div class="product-list__img">
+                <img src="../img/product-8.jpg" alt="" />
+              </div>
+
+              <div class="product-list__info">
+                <div class="info">
+                  <a href="" class="info__name">Influencer Marketing </a>
+                  <strong class="info__fee">$ 90</strong>
+                  <button class="info__btn">Add To Cart</button>
+                </div>
+              </div>
+            </li>
+            <!-- item child -->
+            <li class="product-list__child">
+              <div class="product-list__img">
+                <img src="../img/product-9.jpg" alt="" />
+              </div>
+
+              <div class="product-list__info">
+                <div class="info">
+                  <a href="" class="info__name">PPC Agency</a>
+                  <strong class="info__fee">$ 78</strong>
+                  <button class="info__btn">Add To Cart</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- end product list -->
+
+          <!-- start pagination -->
+          <ul class="pagination">
+            <li class="pagination-child">
+              <a href="" class="pagination__item">1</a>
+            </li>
+            <li class="pagination-child">
+              <a href="" class="pagination__item">2</a>
+            </li>
+            <li class="pagination-child">
+              <a href="" class="pagination__item">3</a>
+            </li>
+            <li class="pagination-child">
+              <a href="" class="pagination__item">
+                <i
+                  style="font-size: 12px; font-weight: bold"
+                  class="fa-solid fa-arrow-right"
+                ></i>
+              </a>
+            </li>
+          </ul>
+          <!-- end pagination -->
+        </div>
+        <!-- end shop products  -->
+      </div>
+    </div>
+    <!-- end main container -->
+
+    <!-- Start Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__list">
+          <a href="">
+            <img src="../img/img-logo.png " alt="" />
+          </a>
+          <p class="footer__desc">
+            Scholars provides universal access to the world’s best education,
+            partnering with top universities and organizations to offer courses
+            online.
+          </p>
+          <p class="footer__legal-copyright">
+            © 2017 Scholrs Inc. All rights reserved.
+          </p>
+          <ul class="footer__ads-logo">
+            <li>
+              <a href="https://www.apple.com/itunes/">
+                <img src="../img/android.png" alt="for apple" />
+              </a>
+            </li>
+            <li>
+              <a href="https://play.google.com/store/games?pli=1">
+                <img src="../img/apple.png" alt="for android" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__list">
+          <div class="footer__list-child">
+            <h3>Scholars</h3>
+            <ul>
+              <li>
+                <a href="">About Us</a>
+              </li>
+              <li>
+                <a href="">Leadership</a>
+              </li>
+              <li>
+                <a href="">Careers</a>
+              </li>
+              <li>
+                <a href="">FAQ</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__list-child">
+            <h3>Product</h3>
+            <ul>
+              <li>
+                <a href="">Education Light</a>
+              </li>
+              <li>
+                <a href="">Education Starter</a>
+              </li>
+              <li>
+                <a href="">Education Premium</a>
+              </li>
+              <li>
+                <a href="">Business</a>
+              </li>
+              <li>
+                <a href="">Business Plus</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__list-child">
+            <h3>Support</h3>
+            <ul>
+              <li>
+                <a href="">Support</a>
+              </li>
+              <li>
+                <a href="">Toll Free Number</a>
+              </li>
+              <li>
+                <a href="">Open Ticket</a>
+              </li>
+              <li>
+                <a href="">System Requirements</a>
+              </li>
+              <li>
+                <a href="">Feedback</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__list">
+          <h3>Subscribes Us</h3>
+          <p class="desc">Subscribe us to get all the latest news from us</p>
+          <form class="email-input" action="" autocomplete="off">
+            <input
+              type="email"
+              name=""
+              id=""
+              spellcheck="false"
+              placeholder="Your email"
+            />
+            <button type="submit">
+              <span>SEND</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({});
+    </script>
+  </body>
+</html>
